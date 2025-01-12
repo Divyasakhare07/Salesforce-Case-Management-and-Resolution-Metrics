@@ -1,8 +1,11 @@
 import random
 import csv
 from faker import Faker
+from datetime import datetime
 
 fake = Faker()
+start_date = datetime(2015, 2, 11)
+end_date = datetime.now()  
 
 def generate_case_data(num_cases=100):
     case_data = []
@@ -13,7 +16,7 @@ def generate_case_data(num_cases=100):
             'Case Origin': random.choice(['Phone', 'Email', 'Web']),
             'Priority': random.choice(['Low', 'Medium', 'High']),
             'Case Type': random.choice(['Technical', 'Billing', 'General']),
-            'Opened Date': fake.date_this_year(),
+            'Opened Date': fake.date_between_dates(date_start=start_date, date_end=end_date),
             'Closed Date': fake.date_this_year() if random.choice([True, False]) else None,
             'Resolution Time': random.randint(1, 72),  # Hours
             'First Contact Resolution': random.choice([True, False]),
@@ -26,7 +29,7 @@ def generate_case_data(num_cases=100):
 fake_cases = generate_case_data(100)
 
 # Define the path to save the CSV
-csv_file_path = "c:/Salesforce Case Management/dataset/fake_case_data.csv"
+csv_file_path = "c:/Salesforce Case Management/dataset/fake_case_data1.csv"
 
 # Define CSV fieldnames (column names)
 fieldnames = ['Case ID', 'Status', 'Case Origin', 'Priority', 'Case Type', 'Opened Date', 'Closed Date',
