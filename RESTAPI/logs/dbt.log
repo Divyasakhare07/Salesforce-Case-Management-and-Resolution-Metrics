@@ -1,0 +1,120 @@
+[0m18:48:13.804418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A907967450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A907965FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A907966BD0>]}
+
+
+============================== 18:48:13.807357 | 052f7ca5-61a8-40fa-8da9-0064776c295e ==============================
+[0m18:48:13.807357 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:48:13.808355 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Salesforce Case Management\\RESTAPI\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init salesforce', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:48:13.828075 [error] [MainThread]: Encountered an error:
+'profile'
+[0m18:48:13.842382 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\divya\Anaconda\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\divya\Anaconda\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\divya\Anaconda\Lib\site-packages\dbt\cli\main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\divya\Anaconda\Lib\site-packages\dbt\task\init.py", line 319, in run
+    profile_name = self.get_profile_name_from_current_project()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\divya\Anaconda\Lib\site-packages\dbt\task\init.py", line 140, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+           ~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'profile'
+
+[0m18:48:13.845389 [debug] [MainThread]: Command `dbt init` failed at 18:48:13.844389 after 0.17 seconds
+[0m18:48:13.845389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A9079DA290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A90796C410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A907965390>]}
+[0m18:48:13.846389 [debug] [MainThread]: Flushing usage events
+[0m18:48:14.381457 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:48:38.818323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E3A9F27450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E3A9F267D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E3A9F26F50>]}
+
+
+============================== 18:48:38.822344 | 776c2eaf-9384-48a8-9797-6020f5514bb3 ==============================
+[0m18:48:38.822344 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:48:38.823340 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Salesforce Case Management\\RESTAPI\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init casesales', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:48:38.838322 [error] [MainThread]: Encountered an error:
+'profile'
+[0m18:48:38.840324 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\divya\Anaconda\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\divya\Anaconda\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\divya\Anaconda\Lib\site-packages\dbt\cli\main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\divya\Anaconda\Lib\site-packages\dbt\task\init.py", line 319, in run
+    profile_name = self.get_profile_name_from_current_project()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\divya\Anaconda\Lib\site-packages\dbt\task\init.py", line 140, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+           ~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'profile'
+
+[0m18:48:38.842325 [debug] [MainThread]: Command `dbt init` failed at 18:48:38.842325 after 0.13 seconds
+[0m18:48:38.843324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E3A9F9BF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E3A9F2C550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002E3A9B57810>]}
+[0m18:48:38.844325 [debug] [MainThread]: Flushing usage events
+[0m18:48:39.254379 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:51:35.852447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002096DFE66D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002096E0232D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002096DFE5A90>]}
+
+
+============================== 18:51:35.855447 | 15fed1fd-e019-4461-a1d0-e47914e94010 ==============================
+[0m18:51:35.855447 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:51:35.856448 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Salesforce Case Management\\RESTAPI\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init casesales', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:51:35.876744 [error] [MainThread]: Encountered an error:
+'profile'
+[0m18:51:35.878725 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\divya\Anaconda\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\divya\Anaconda\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\divya\Anaconda\Lib\site-packages\dbt\cli\main.py", line 477, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\divya\Anaconda\Lib\site-packages\dbt\task\init.py", line 319, in run
+    profile_name = self.get_profile_name_from_current_project()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\divya\Anaconda\Lib\site-packages\dbt\task\init.py", line 140, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+           ~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'profile'
+
+[0m18:51:35.882727 [debug] [MainThread]: Command `dbt init` failed at 18:51:35.882727 after 0.14 seconds
+[0m18:51:35.883726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002096DFEC390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002096DFE65D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002096DFDF790>]}
+[0m18:51:35.884726 [debug] [MainThread]: Flushing usage events
+[0m18:51:36.388426 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:59:19.231582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B199208DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B199207AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B19920A890>]}
+
+
+============================== 00:59:19.237397 | 6dfba649-41de-47b3-a2e1-30cca8920ec1 ==============================
+[0m00:59:19.237397 [info ] [MainThread]: Running with dbt=1.9.1
+[0m00:59:19.238389 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:59:19.238389 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Salesforce Case Management\RESTAPI\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m00:59:19.239907 [debug] [MainThread]: Command `dbt run` failed at 00:59:19.239907 after 0.12 seconds
+[0m00:59:19.239907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B1991BC450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B19920BE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B1991AF8D0>]}
+[0m00:59:19.239907 [debug] [MainThread]: Flushing usage events
+[0m00:59:19.787824 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:11:26.837062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEAE0085D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEADFB6390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEAE007A50>]}
+
+
+============================== 17:11:26.851479 | 1237ae5b-df45-4f5f-960e-14ea21cedbf2 ==============================
+[0m17:11:26.851479 [info ] [MainThread]: Running with dbt=1.9.1
+[0m17:11:26.853476 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m17:11:26.854476 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Salesforce Case Management\RESTAPI\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:11:26.855476 [debug] [MainThread]: Command `dbt run` failed at 17:11:26.855476 after 0.17 seconds
+[0m17:11:26.855476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEADFBC250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEADFEA950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEADFAFB10>]}
+[0m17:11:26.856474 [debug] [MainThread]: Flushing usage events
+[0m17:11:27.408956 [debug] [MainThread]: An error was encountered while trying to flush usage events

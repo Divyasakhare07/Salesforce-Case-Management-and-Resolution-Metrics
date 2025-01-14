@@ -1,8 +1,0 @@
-#Mapping values
-#Sat Jan 11 23:35:24 EST 2025
-Case\ Origin=Origin
-Case\ Type=Case_Type__c
-Customer\ Satisfaction\ Score=Customer_Satisfaction_Score__c
-First\ Contact\ Resolution=First_Contact_Resolution__c
-Priority=Priority
-Status=Status

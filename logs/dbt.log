@@ -1,0 +1,448 @@
+[0m18:24:30.995473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB688897D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB68835310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB6888B890>]}
+
+
+============================== 18:24:31.002473 | 512161b8-6948-445d-9d01-94283f1dd1fd ==============================
+[0m18:24:31.002473 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:24:31.004482 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init my_dbt_project', 'send_anonymous_usage_stats': 'True'}
+[0m18:24:31.026537 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'WindowsPath'.. Dictionary: {'dir': WindowsPath('C:/Users/divya/.dbt')}
+[0m18:24:31.028538 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m18:24:31.031538 [debug] [MainThread]: Starter project path: C:\Users\divya\Anaconda\Lib\site-packages\dbt\include\starter_project
+[0m18:24:31.168868 [info ] [MainThread]: 
+Your new dbt project "my_dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:24:31.171869 [info ] [MainThread]: Setting up your profile.
+[0m18:24:31.172882 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No adapters available. Learn how to install an adapter by going to https://docs.getdbt.com/docs/connect-adapters#install-using-the-cli
+[0m18:24:31.174915 [debug] [MainThread]: Command `dbt init` failed at 18:24:31.174915 after 0.37 seconds
+[0m18:24:31.175863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB688ABE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB68385B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AB68837DD0>]}
+[0m18:24:31.175863 [debug] [MainThread]: Flushing usage events
+[0m18:24:31.863193 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:36:07.259558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8643A9050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8643AB910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8643A9190>]}
+
+
+============================== 18:36:07.266556 | 184bfc46-aedd-4d77-a2e2-f2cfe3b162ef ==============================
+[0m18:36:07.266556 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:36:07.267557 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init casessalesforce', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:36:07.315703 [debug] [MainThread]: Starter project path: C:\Users\divya\Anaconda\Lib\site-packages\dbt\include\starter_project
+[0m18:36:07.348702 [info ] [MainThread]: 
+Your new dbt project "casessalesforce" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:36:07.350704 [info ] [MainThread]: Setting up your profile.
+[0m18:37:32.123807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120DA461C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120DA49F490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120DA49CD10>]}
+
+
+============================== 18:37:32.129269 | 294335db-e0d7-45c1-ae73-72e798eaedc7 ==============================
+[0m18:37:32.129269 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:37:32.130269 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init casesales', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:37:32.151714 [debug] [MainThread]: Starter project path: C:\Users\divya\Anaconda\Lib\site-packages\dbt\include\starter_project
+[0m18:37:32.165153 [info ] [MainThread]: 
+Your new dbt project "casesales" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:37:32.166153 [info ] [MainThread]: Setting up your profile.
+[0m18:38:20.584729 [info ] [MainThread]: Profile casesales written to C:\Users\divya\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:38:20.588743 [debug] [MainThread]: Command `dbt init` succeeded at 18:38:20.586765 after 48.59 seconds
+[0m18:38:20.589743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120DA44C310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120D9FA62D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000120DA43FAD0>]}
+[0m18:38:20.590789 [debug] [MainThread]: Flushing usage events
+[0m18:38:21.184008 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:39:33.978012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222A47FB910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222A47FBA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222A47F9190>]}
+
+
+============================== 18:39:33.982059 | 56b61a22-1ca1-4cfe-bf8e-7af5526c7748 ==============================
+[0m18:39:33.982059 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:39:33.983073 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:39:34.002991 [info ] [MainThread]: dbt version: 1.9.1
+[0m18:39:34.004253 [info ] [MainThread]: python version: 3.11.7
+[0m18:39:34.005263 [info ] [MainThread]: python path: C:\Users\divya\Anaconda\python.exe
+[0m18:39:34.006265 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m18:39:34.073449 [info ] [MainThread]: Using profiles dir at C:\Users\divya\.dbt
+[0m18:39:34.074457 [info ] [MainThread]: Using profiles.yml file at C:\Users\divya\.dbt\profiles.yml
+[0m18:39:34.075467 [info ] [MainThread]: Using dbt_project.yml file at C:\Salesforce Case Management\dbt_project.yml
+[0m18:39:34.078459 [info ] [MainThread]: adapter type: postgres
+[0m18:39:34.078459 [info ] [MainThread]: adapter version: 1.9.0
+[0m18:39:34.079461 [info ] [MainThread]: Configuration:
+[0m18:39:34.080459 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:39:34.080459 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:39:34.081457 [info ] [MainThread]: Required dependencies:
+[0m18:39:34.081457 [debug] [MainThread]: Executing "git --help"
+[0m18:39:34.155389 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:39:34.156375 [debug] [MainThread]: STDERR: "b''"
+[0m18:39:34.156375 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:39:34.157376 [info ] [MainThread]: Connection:
+[0m18:39:34.158329 [info ] [MainThread]:   host: localhost
+[0m18:39:34.158329 [info ] [MainThread]:   port: 5432
+[0m18:39:34.159417 [info ] [MainThread]:   user: postgres
+[0m18:39:34.159417 [info ] [MainThread]:   database: salesdb
+[0m18:39:34.160387 [info ] [MainThread]:   schema: sale
+[0m18:39:34.160387 [info ] [MainThread]:   connect_timeout: 10
+[0m18:39:34.161404 [info ] [MainThread]:   role: None
+[0m18:39:34.162331 [info ] [MainThread]:   search_path: None
+[0m18:39:34.162331 [info ] [MainThread]:   keepalives_idle: 0
+[0m18:39:34.163337 [info ] [MainThread]:   sslmode: None
+[0m18:39:34.164332 [info ] [MainThread]:   sslcert: None
+[0m18:39:34.164332 [info ] [MainThread]:   sslkey: None
+[0m18:39:34.165336 [info ] [MainThread]:   sslrootcert: None
+[0m18:39:34.165336 [info ] [MainThread]:   application_name: dbt
+[0m18:39:34.166335 [info ] [MainThread]:   retries: 1
+[0m18:39:34.167333 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m18:39:34.397278 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m18:39:38.627080 [debug] [MainThread]: Using postgres connection "debug"
+[0m18:39:38.627080 [debug] [MainThread]: On debug: select 1 as id
+[0m18:39:38.628080 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:39:38.689112 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+[0m18:39:38.736644 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m18:39:38.737622 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m18:39:38.737622 [debug] [MainThread]: On debug: No close available on handle
+[0m18:39:38.738621 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:39:38.739621 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:39:38.739621 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Salesforce Case Management\dbt_project.yml> not found
+
+[0m18:39:38.740621 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:39:38.742648 [debug] [MainThread]: Command `dbt debug` failed at 18:39:38.741621 after 4.91 seconds
+[0m18:39:38.742648 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:39:38.742648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222A47F8150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222A47AC490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222A4984690>]}
+[0m18:39:38.743641 [debug] [MainThread]: Flushing usage events
+[0m18:39:39.251523 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:43:48.342033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026004147450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026003D37910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002600413FA10>]}
+
+
+============================== 18:43:48.346033 | 4c5a2f2c-fdc2-402b-a417-2bd4dd8a89b9 ==============================
+[0m18:43:48.346033 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:43:48.347033 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init salesforce', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:43:48.363242 [debug] [MainThread]: Starter project path: C:\Users\divya\Anaconda\Lib\site-packages\dbt\include\starter_project
+[0m18:43:48.378511 [info ] [MainThread]: 
+Your new dbt project "salesforce" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:43:48.380518 [info ] [MainThread]: Setting up your profile.
+[0m18:44:56.575604 [info ] [MainThread]: Profile salesforce written to C:\Users\divya\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:44:56.578625 [debug] [MainThread]: Command `dbt init` succeeded at 18:44:56.578625 after 68.35 seconds
+[0m18:44:56.580607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260040FC310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260040EFE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260040EFE10>]}
+[0m18:44:56.581603 [debug] [MainThread]: Flushing usage events
+[0m18:44:57.046321 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:45:18.201002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001193F23FA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001193F224C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001193F227510>]}
+
+
+============================== 18:45:18.204966 | fefe2322-ddf9-4156-8a48-ceab85316636 ==============================
+[0m18:45:18.204966 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:45:18.205967 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:45:18.218962 [info ] [MainThread]: dbt version: 1.9.1
+[0m18:45:18.219963 [info ] [MainThread]: python version: 3.11.7
+[0m18:45:18.220962 [info ] [MainThread]: python path: C:\Users\divya\Anaconda\python.exe
+[0m18:45:18.222969 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m18:45:18.282887 [info ] [MainThread]: Using profiles dir at C:\Users\divya\.dbt
+[0m18:45:18.284833 [info ] [MainThread]: Using profiles.yml file at C:\Users\divya\.dbt\profiles.yml
+[0m18:45:18.285843 [info ] [MainThread]: Using dbt_project.yml file at C:\Salesforce Case Management\dbt_project.yml
+[0m18:45:18.285843 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:45:18.288119 [debug] [MainThread]: Command `dbt debug` failed at 18:45:18.288119 after 0.22 seconds
+[0m18:45:18.288119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001193F268290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001193F1FC250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001193F1EFE90>]}
+[0m18:45:18.289086 [debug] [MainThread]: Flushing usage events
+[0m18:45:18.700915 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:31:27.089256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CAF9F762D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CAF9AA10D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CAF9FA4D90>]}
+
+
+============================== 20:31:27.095141 | 49d95eb9-21c9-45e6-b209-3aad4f5bdc16 ==============================
+[0m20:31:27.095141 [info ] [MainThread]: Running with dbt=1.9.1
+[0m20:31:27.096242 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Salesforce Case Management\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:31:27.112232 [info ] [MainThread]: dbt version: 1.9.1
+[0m20:31:27.113198 [info ] [MainThread]: python version: 3.11.7
+[0m20:31:27.113198 [info ] [MainThread]: python path: C:\Users\divya\Anaconda\python.exe
+[0m20:31:27.114220 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m20:31:27.279133 [info ] [MainThread]: Using profiles dir at C:\Users\divya\.dbt
+[0m20:31:27.281133 [info ] [MainThread]: Using profiles.yml file at C:\Users\divya\.dbt\profiles.yml
+[0m20:31:27.281133 [info ] [MainThread]: Using dbt_project.yml file at C:\Salesforce Case Management\dbt_project.yml
+[0m20:31:27.285177 [info ] [MainThread]: adapter type: postgres
+[0m20:31:27.286135 [info ] [MainThread]: adapter version: 1.9.0
+[0m20:31:27.289134 [info ] [MainThread]: Configuration:
+[0m20:31:27.290133 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:31:27.291132 [info ] [MainThread]:   dbt_project.yml file [[31mERROR invalid[0m]
+[0m20:31:27.292135 [info ] [MainThread]: Required dependencies:
+[0m20:31:27.293137 [debug] [MainThread]: Executing "git --help"
+[0m20:31:27.361700 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:31:27.362810 [debug] [MainThread]: STDERR: "b''"
+[0m20:31:27.362810 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:31:27.363700 [info ] [MainThread]: Connection:
+[0m20:31:27.364700 [info ] [MainThread]:   host: localhost
+[0m20:31:27.365700 [info ] [MainThread]:   port: 5432
+[0m20:31:27.366700 [info ] [MainThread]:   user: postgres
+[0m20:31:27.366700 [info ] [MainThread]:   database: salesdb
+[0m20:31:27.367698 [info ] [MainThread]:   schema: sale
+[0m20:31:27.367698 [info ] [MainThread]:   connect_timeout: 10
+[0m20:31:27.368699 [info ] [MainThread]:   role: None
+[0m20:31:27.369701 [info ] [MainThread]:   search_path: None
+[0m20:31:27.370700 [info ] [MainThread]:   keepalives_idle: 0
+[0m20:31:27.370700 [info ] [MainThread]:   sslmode: None
+[0m20:31:27.371700 [info ] [MainThread]:   sslcert: None
+[0m20:31:27.371700 [info ] [MainThread]:   sslkey: None
+[0m20:31:27.372700 [info ] [MainThread]:   sslrootcert: None
+[0m20:31:27.372700 [info ] [MainThread]:   application_name: dbt
+[0m20:31:27.373700 [info ] [MainThread]:   retries: 1
+[0m20:31:27.373700 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m20:31:27.749840 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m20:31:30.964958 [debug] [MainThread]: Using postgres connection "debug"
+[0m20:31:30.964958 [debug] [MainThread]: On debug: select 1 as id
+[0m20:31:30.965984 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:31:31.017788 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "salesdb" does not exist
+
+[0m20:31:31.063388 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m20:31:31.063388 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m20:31:31.064384 [debug] [MainThread]: On debug: No close available on handle
+[0m20:31:31.064384 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m20:31:31.065384 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m20:31:31.066384 [info ] [MainThread]: Project loading failed for the following reason:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in C:\Salesforce Case Management\dbt_project.yml
+
+
+[0m20:31:31.067384 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "salesdb" does not exist
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m20:31:31.069384 [debug] [MainThread]: Command `dbt debug` failed at 20:31:31.069384 after 4.11 seconds
+[0m20:31:31.069384 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:31:31.069384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CAF9F7C290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CAF9F6F750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CAF9F6FA10>]}
+[0m20:31:31.070385 [debug] [MainThread]: Flushing usage events
+[0m20:31:31.586728 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:34:45.791241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D105E98DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D105E92F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D105E9B690>]}
+
+
+============================== 20:34:45.795209 | 8d3ab269-0eb9-4a86-889e-ac112f189261 ==============================
+[0m20:34:45.795209 [info ] [MainThread]: Running with dbt=1.9.1
+[0m20:34:45.796234 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init my_dbt_project', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:34:45.820667 [debug] [MainThread]: Starter project path: C:\Users\divya\Anaconda\Lib\site-packages\dbt\include\starter_project
+[0m20:34:45.880895 [info ] [MainThread]: 
+Your new dbt project "my_dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:34:45.881896 [info ] [MainThread]: Setting up your profile.
+[0m20:35:58.126343 [info ] [MainThread]: Profile my_dbt_project written to C:\Users\divya\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:35:58.129343 [debug] [MainThread]: Command `dbt init` succeeded at 20:35:58.129343 after 72.45 seconds
+[0m20:35:58.130341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D105E93490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D105E4C310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D105A87910>]}
+[0m20:35:58.131342 [debug] [MainThread]: Flushing usage events
+[0m20:35:58.703138 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:36:29.247329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029FBF445950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029FBF48F0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029FBF48F510>]}
+
+
+============================== 20:36:29.250420 | 1b4105f7-1ebd-47a3-9bf9-6ccf4f8ada84 ==============================
+[0m20:36:29.250420 [info ] [MainThread]: Running with dbt=1.9.1
+[0m20:36:29.251407 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:36:29.265312 [info ] [MainThread]: dbt version: 1.9.1
+[0m20:36:29.266334 [info ] [MainThread]: python version: 3.11.7
+[0m20:36:29.266334 [info ] [MainThread]: python path: C:\Users\divya\Anaconda\python.exe
+[0m20:36:29.267334 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m20:36:29.326842 [info ] [MainThread]: Using profiles dir at C:\Users\divya\.dbt
+[0m20:36:29.327840 [info ] [MainThread]: Using profiles.yml file at C:\Users\divya\.dbt\profiles.yml
+[0m20:36:29.328858 [info ] [MainThread]: Using dbt_project.yml file at C:\Salesforce Case Management\dbt_project.yml
+[0m20:36:29.329834 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m20:36:29.330793 [debug] [MainThread]: Command `dbt debug` failed at 20:36:29.330793 after 0.22 seconds
+[0m20:36:29.330793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029FBF494810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029FBF53AAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029FBF44C250>]}
+[0m20:36:29.332289 [debug] [MainThread]: Flushing usage events
+[0m20:36:29.866231 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:39:18.186806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2E90CFA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2E8CB7710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2E90B4F50>]}
+
+
+============================== 20:39:18.190806 | ffc3363b-b69b-4f2e-8f6b-dd68957ee490 ==============================
+[0m20:39:18.190806 [info ] [MainThread]: Running with dbt=1.9.1
+[0m20:39:18.190806 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:39:18.205341 [info ] [MainThread]: dbt version: 1.9.1
+[0m20:39:18.206341 [info ] [MainThread]: python version: 3.11.7
+[0m20:39:18.207341 [info ] [MainThread]: python path: C:\Users\divya\Anaconda\python.exe
+[0m20:39:18.208342 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m20:39:18.276318 [info ] [MainThread]: Using profiles dir at C:\Users\divya\.dbt
+[0m20:39:18.276840 [info ] [MainThread]: Using profiles.yml file at C:\Users\divya\.dbt\profiles.yml
+[0m20:39:18.277849 [info ] [MainThread]: Using dbt_project.yml file at C:\Salesforce Case Management\dbt_project.yml
+[0m20:39:18.277849 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m20:39:18.278876 [debug] [MainThread]: Command `dbt debug` failed at 20:39:18.278876 after 0.22 seconds
+[0m20:39:18.279881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2E908C3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2E90D6150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2E90D78D0>]}
+[0m20:39:18.279881 [debug] [MainThread]: Flushing usage events
+[0m20:39:18.782476 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:41:08.183013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F17B8E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F17BBD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F17BB790>]}
+
+
+============================== 20:41:08.187014 | d0ad4966-2189-48a8-8747-68142f9784af ==============================
+[0m20:41:08.187014 [info ] [MainThread]: Running with dbt=1.9.1
+[0m20:41:08.187014 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:41:08.204653 [info ] [MainThread]: dbt version: 1.9.1
+[0m20:41:08.205655 [info ] [MainThread]: python version: 3.11.7
+[0m20:41:08.206656 [info ] [MainThread]: python path: C:\Users\divya\Anaconda\python.exe
+[0m20:41:08.207652 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m20:41:08.261818 [info ] [MainThread]: Using profiles dir at C:\Users\divya\.dbt
+[0m20:41:08.263822 [info ] [MainThread]: Using profiles.yml file at C:\Users\divya\.dbt\profiles.yml
+[0m20:41:08.263822 [info ] [MainThread]: Using dbt_project.yml file at C:\Salesforce Case Management\dbt_project.yml
+[0m20:41:08.264841 [info ] [MainThread]: adapter type: postgres
+[0m20:41:08.265823 [info ] [MainThread]: adapter version: 1.9.0
+[0m20:41:08.266821 [info ] [MainThread]: Configuration:
+[0m20:41:08.266821 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:41:08.267822 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m20:41:08.267822 [info ] [MainThread]: Required dependencies:
+[0m20:41:08.268822 [debug] [MainThread]: Executing "git --help"
+[0m20:41:08.335823 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:41:08.336824 [debug] [MainThread]: STDERR: "b''"
+[0m20:41:08.337823 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:41:08.338823 [info ] [MainThread]: Connection:
+[0m20:41:08.339823 [info ] [MainThread]:   host: localhost
+[0m20:41:08.340824 [info ] [MainThread]:   port: 5432
+[0m20:41:08.340824 [info ] [MainThread]:   user: postgres
+[0m20:41:08.341824 [info ] [MainThread]:   database: salesforce
+[0m20:41:08.341824 [info ] [MainThread]:   schema: sales
+[0m20:41:08.342823 [info ] [MainThread]:   connect_timeout: 10
+[0m20:41:08.342823 [info ] [MainThread]:   role: None
+[0m20:41:08.343824 [info ] [MainThread]:   search_path: None
+[0m20:41:08.343824 [info ] [MainThread]:   keepalives_idle: 0
+[0m20:41:08.344824 [info ] [MainThread]:   sslmode: None
+[0m20:41:08.345823 [info ] [MainThread]:   sslcert: None
+[0m20:41:08.345823 [info ] [MainThread]:   sslkey: None
+[0m20:41:08.346827 [info ] [MainThread]:   sslrootcert: None
+[0m20:41:08.346827 [info ] [MainThread]:   application_name: dbt
+[0m20:41:08.347827 [info ] [MainThread]:   retries: 1
+[0m20:41:08.347827 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m20:41:08.505899 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m20:41:08.556934 [debug] [MainThread]: Using postgres connection "debug"
+[0m20:41:08.556934 [debug] [MainThread]: On debug: select 1 as id
+[0m20:41:08.557951 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:41:08.604666 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "salesforce" does not exist
+
+[0m20:41:08.648812 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m20:41:08.648812 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m20:41:08.648812 [debug] [MainThread]: On debug: No close available on handle
+[0m20:41:08.649863 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m20:41:08.650884 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m20:41:08.650884 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Salesforce Case Management\dbt_project.yml> not found
+
+[0m20:41:08.651894 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "salesforce" does not exist
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m20:41:08.653934 [debug] [MainThread]: Command `dbt debug` failed at 20:41:08.653934 after 0.58 seconds
+[0m20:41:08.654965 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:41:08.654965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F176C290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F1764210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254F1858850>]}
+[0m20:41:08.656028 [debug] [MainThread]: Flushing usage events
+[0m20:41:09.124215 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:17:36.844036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0E56B8E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0E5664B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0E56B9190>]}
+
+
+============================== 23:17:36.850030 | ce277c17-4072-4112-81dc-24a86eb65e53 ==============================
+[0m23:17:36.850030 [info ] [MainThread]: Running with dbt=1.9.1
+[0m23:17:36.851014 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\divya\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:17:36.852012 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Salesforce Case Management\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:17:36.853012 [debug] [MainThread]: Command `dbt run` failed at 23:17:36.853012 after 0.14 seconds
+[0m23:17:36.853012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0E566C410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0E565FA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0E565F8D0>]}
+[0m23:17:36.854012 [debug] [MainThread]: Flushing usage events
+[0m23:17:37.259229 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,44 +1,95 @@
-import random
-import csv
 from faker import Faker
-from datetime import datetime
+import random
+import datetime
+import csv
 
+# Initialize Faker instance
 fake = Faker()
-start_date = datetime(2015, 2, 11)
-end_date = datetime.now()  
 
-def generate_case_data(num_cases=100):
-    case_data = []
-    for _ in range(num_cases):
-        case_data.append({
-            'Case ID': fake.uuid4(),
-            'Status': random.choice(['Open', 'Closed', 'Escalated']),
-            'Case Origin': random.choice(['Phone', 'Email', 'Web']),
-            'Priority': random.choice(['Low', 'Medium', 'High']),
-            'Case Type': random.choice(['Technical', 'Billing', 'General']),
-            'Opened Date': fake.date_between_dates(date_start=start_date, date_end=end_date),
-            'Closed Date': fake.date_this_year() if random.choice([True, False]) else None,
-            'Resolution Time': random.randint(1, 72),  # Hours
-            'First Contact Resolution': random.choice([True, False]),
-            'Escalation Flag': random.choice([True, False]),
-            'Customer Satisfaction Score': random.randint(1, 10)
-        })
-    return case_data
+# Function to generate random cases
+def generate_cases(num_cases):
+    cases = []
+    
+    # Calculate number of closed and open cases
+    num_closed_cases = (num_cases * 3) // 4  # 3:1 ratio, closed cases
+    num_open_cases = num_cases - num_closed_cases
+    
+    # Define the start and end date for the year 2024
+    start_date = datetime.datetime(2024, 1, 1)
+    end_date = datetime.datetime(2024, 12, 31)
 
-# Generate 100 fake cases
-fake_cases = generate_case_data(100)
+    # Generate closed cases
+    for _ in range(num_closed_cases):
+        opened_date = fake.date_time_between(start_date=start_date, end_date=end_date)
+        closed_date = opened_date + datetime.timedelta(days=random.randint(1, 15))
+        
+        # Determine priority with a 3:2 ratio for low vs. other priorities
+        priority = random.choices(
+            ["Low", "Medium", "High"], 
+            weights=[3, 1, 1],  # Low has a higher weight
+            k=1
+        )[0]
+        
+        case = {
+            "status": "Closed",  # Set status as "Closed" for closed cases
+            "case_type": random.choice(["Billing", "General", "Technical"]),
+            "priority": priority,
+            "Opened_date": opened_date,
+            "Closed_date": closed_date,
+            "customer_satisfaction_score": random.randint(1, 10),  # Scores between 1 and 10
+            "first_contact_resolution": random.choice([True, False]),
+            "Customer Region": random.choice(["Northeast", "West"])  # More emphasis on Northeast and West
+        }
+        cases.append(case)
 
-# Define the path to save the CSV
-csv_file_path = "c:/Salesforce Case Management/dataset/fake_case_data1.csv"
+    # Generate open cases
+    for _ in range(num_open_cases):
+        opened_date = fake.date_time_between(start_date=start_date, end_date=end_date)
+        
+        # Determine priority with a 3:2 ratio for low vs. other priorities
+        priority = random.choices(
+            ["Low", "Medium", "High"], 
+            weights=[3, 1, 1],  # Low has a higher weight
+            k=1
+        )[0]
+        
+        case = {
+            "status": random.choice(["New", "Working", "Waiting on customer", "Escalated"]),  # Valid statuses for open cases
+            "case_type": random.choice(["Billing", "General", "Technical"]),
+            "priority": priority,
+            "Opened_date": opened_date,
+            "Closed_date": None,  # Keep as None for open cases
+            "customer_satisfaction_score": None,
+            "first_contact_resolution": random.choice([True, False]),
+            "Customer Region": random.choice(["Northeast", "West"])  # More emphasis on Northeast and West
+        }
+        cases.append(case)
 
-# Define CSV fieldnames (column names)
-fieldnames = ['Case ID', 'Status', 'Case Origin', 'Priority', 'Case Type', 'Opened Date', 'Closed Date',
-              'Resolution Time', 'First Contact Resolution', 'Escalation Flag', 'Customer Satisfaction Score']
+    return cases
 
-# Write data to CSV file
-with open(csv_file_path, mode='w', newline='', encoding='utf-8') as file:
+# Generate 1000 sample cases
+num_cases = 1000
+case_data = generate_cases(num_cases)
+
+# Write to CSV file
+output_file = "case_data.csv"
+fieldnames = ["status", "case_type", "priority", "Opened_date", "Closed_date", "customer_satisfaction_score", "first_contact_resolution", "Customer Region"]
+
+with open(output_file, mode="w", newline="", encoding="utf-8") as file:
     writer = csv.DictWriter(file, fieldnames=fieldnames)
-    writer.writeheader()  # Write the header row
-    writer.writerows(fake_cases)  # Write the case data
+    writer.writeheader()
+    for case in case_data:
+        # Format Opened_date in ISO 8601 format
+        opened_date_str = case['Opened_date'].strftime('%Y-%m-%dT%H:%M:%S') + 'Z'
+        case["Opened_date"] = opened_date_str.strip()  # Remove any extra spaces
 
-print(f"Data saved to {csv_file_path}")
+        # Write Closed_date in ISO 8601 format or keep as empty string if None
+        if case["Closed_date"] is not None:
+            closed_date_str = case['Closed_date'].strftime('%Y-%m-%dT%H:%M:%S') + 'Z'
+            case["Closed_date"] = closed_date_str.strip()  # Remove any extra spaces
+        else:
+            case["Closed_date"] = ""  # Keep it as empty for open cases
+
+        writer.writerow(case)
+
+print(f"Data written to {output_file}")
