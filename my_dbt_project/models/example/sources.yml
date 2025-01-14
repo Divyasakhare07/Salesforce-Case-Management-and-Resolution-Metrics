@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: my_source
+    database: salesforce  # Ensure this is correct
+    schema: public         # Correct schema name
+    tables:
+      - name: case_raw     # Correct table name
