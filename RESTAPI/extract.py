@@ -6,7 +6,7 @@ import random
 POSTGRESQL_DETAILS = {
     "host": "localhost",
     "database": "salesforce",
-    "user": "postgres",
+    "user": "***",
     "password": "***",
 }
 
@@ -38,7 +38,7 @@ def fetch_data_from_salesforce():
 
     # Fetch Salesforce data
     headers = {"Authorization": f"Bearer {access_token}"}
-    query = "SELECT Id, Case_Type__c, Priority, Status, Opened_Date__c, Closed_Date__c, Customer_Region__c FROM Case"
+    query = "SELECT Id, Case_Type__c, Priority, Status, Opened_Date__c, Closed_Date__c, Customer_Region__c, Origin, Customer_Satisfaction_Score__c, First_Contact_Resolution__c FROM Case"
     url = f"{instance_url}/services/data/v57.0/query?q={query.replace(' ', '+')}"
     response = requests.get(url, headers=headers)
     response.raise_for_status()
@@ -62,7 +62,8 @@ def load_raw_data_to_postgresql(raw_data):
             closed_date TIMESTAMP,
             customer_satisfaction_score FLOAT,
             first_contact_resolution BOOLEAN,
-            customer_region VARCHAR
+            customer_region VARCHAR,
+            case_origin VARCHAR
         );
         """)
         
@@ -70,21 +71,22 @@ def load_raw_data_to_postgresql(raw_data):
         insert_query = """
         INSERT INTO case_raw (
             id, case_type, priority, status, opened_date, closed_date, 
-            customer_satisfaction_score, first_contact_resolution, customer_region
-        ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+            customer_satisfaction_score, first_contact_resolution, customer_region, case_origin
+        ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         ON CONFLICT (id) DO NOTHING;
         """
         transformed_data = [
             (
-                record["Id"], 
-                record.get("Case_Type__c"), 
-                record.get("Priority"), 
-                "Closed",  # Set status as "Closed" for closed cases
-                record.get("Opened_Date__c"), 
-                record.get("Closed_Date__c"), 
-                random.randint(1, 10),  # Scores between 1 and 10
-                random.choice([True, False]),  # First contact resolution
-                record.get("Customer_Region__c"), 
+                record["Id"],
+                record.get("Case_Type__c"),
+                record.get("Priority"),
+                record.get("Status"),
+                record.get("Opened_Date__c"),
+                record.get("Closed_Date__c"),
+                record.get("Customer_Satisfaction_Score__c", 0),  # Default to 0
+                record.get("First_Contact_Resolution__c", False),  # Default to False
+                record.get("Customer_Region__c"),
+                record.get("Origin", "Unknown"),  # Default to "Unknown"
             )
             for record in raw_data
         ]
