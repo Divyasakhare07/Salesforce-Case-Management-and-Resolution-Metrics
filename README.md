@@ -24,8 +24,8 @@ The project is organized as follows:
 │       └── schema.yml       # YAML file to define schema and column-level metadata
 │       ├── sources.yml      # YAML file to define source tables and relationships for dbt
 │       └── staging_case.sql # SQL file for initial staging transformations
-├── VISUALIZATIONS           # Directory for visualization files
-│   └── tableau_workbook.twb # Tableau workbook file 
+├── VISUALIZATION           # Directory for visualization files
+│   └── Salesforce cases Analysis.twbx # Tableau workbook file 
 ├── README.md                # Project documentation with setup instructions, usage, and overview
 
 ```
