@@ -4,7 +4,7 @@
 
 This project focuses on extracting Salesforce cases data fields using the Salesforce REST API, transforming the data, and loading it into a PostgreSQL database. The transformed data is then connected to Tableau for visualization and analysis.
 
-![App Screenshot](./images/data_flow.png "Application Screenshot")
+![App Screenshot](./images/data_flow.jpg "Application Screenshot")
 
 
 ## Project Structure
